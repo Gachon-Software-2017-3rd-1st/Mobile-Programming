@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/redsnow/Desktop/eye/Gachon/2017Gachon1_2/M.P(Mobile_Programming)/Lab/Lab2/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e4b0e68c9677fdf46b88e7c3795f2bf30687eedb">
+        <dex dex="/Users/redsnow/Desktop/eye/Gachon/2017Gachon1_2/M.P(Mobile_Programming)/Lab/Lab2/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_39e8d7050861b3aab25252a81bc694d58ce6ad95/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/redsnow/Desktop/eye/Gachon/2017Gachon1_2/M.P(Mobile_Programming)/Lab/Lab2/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/redsnow/Desktop/eye/Gachon/2017Gachon1_2/M.P(Mobile_Programming)/Lab/Lab2/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_1ae7920a2e383ff8abd0ad2a41c7b79bd0de9e67/classes.dex" />
+    </item>
+
+</items>
