@@ -16,29 +16,23 @@ import android.widget.RadioGroup;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Variables
     Button submitBtn;
     EditText nameTxt;
     RadioGroup sexRadGroup;
     RadioButton malRad, femRad;
     CheckBox smsChk, emailChk;
-    Button mBtn;
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        return super.onCreateOptionsMenu(menu);
-    }
-
+    /*
+        name : onCreate
+        purpose :
+        1. Initialize first of view
+        2. When submit button is pressed, initialize intent instance and put extras of each text fields
+         */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        String myData = "ASDF";
-
-        mBtn = (Button)findViewById(ASDFSAFD);
-        Intent intent = new Intent();
-        intent.getStringExtra()
-
 
         submitBtn = (Button)findViewById(R.id.submitBtn);
         nameTxt = (EditText)findViewById(R.id.nameTxt);
@@ -53,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                //Get Values from widgets
                 int radId = sexRadGroup.getCheckedRadioButtonId();
                 String nameStr = "";
                 String sexStr = "";
@@ -73,8 +69,8 @@ public class MainActivity extends AppCompatActivity {
                 if (emailChk.isChecked()){
                     sendMethod += " E-mail";
                 }
-                Log.d("ASDADASD", sexStr+" QWEQWQEWQWE");
 
+                //Put Extras and start activity with intent
                 intent.putExtra("name", nameStr);
                 intent.putExtra("sex", sexStr);
                 intent.putExtra("sendMethod", sendMethod);
@@ -83,19 +79,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-    public int asdf() {
-        int a;
-        switch (a){
-            case 1:
-                return 1;
-            case 2:
-                return 2;
-
-        }
-        return 3;
-    }
-
-
 
 }

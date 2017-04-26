@@ -11,15 +11,24 @@ import org.w3c.dom.Text;
 
 public class RegisterActivity extends AppCompatActivity {
 
+    // Variables
     Intent myIntent;
     TextView nameTxt, sexTxt, sendMethodTxt;
     String nameStr, sexStr, sendMethodStr;
     Button backBtn;
+
+    /*
+    name : onCreate
+    purpose :
+    1. Get intent instance and extras.
+    2. Set values of text fields with extra values with setValues()
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
+        //Get own intent instance
         myIntent = getIntent();
 
         nameStr = myIntent.getStringExtra("name");
@@ -30,6 +39,7 @@ public class RegisterActivity extends AppCompatActivity {
         sexTxt = (TextView)findViewById(R.id.sexResult);
         sendMethodTxt = (TextView)findViewById(R.id.sendMethodResult);
 
+        //Dismiss current view(activity) when button clicked
         backBtn = (Button)findViewById(R.id.backBtn);
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,6 +50,11 @@ public class RegisterActivity extends AppCompatActivity {
         setValues();
     }
 
+    /*
+    name : setValues()
+    purpose :
+    1. Set each value of text field with extras of intent
+     */
     private void setValues(){
         nameTxt.setText("성명    :"+nameStr);
         sexTxt.setText("성별    :"+sexStr);
