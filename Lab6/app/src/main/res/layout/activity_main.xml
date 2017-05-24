@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fallingstar.lab6.MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/myTxt"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="10dp"
+        android:background="#55dddddd"
+        android:padding="10dp"
+        android:gravity="top"
+        android:hint="Enter some lines of data here..."
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/SaveBtn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="1. Save to sd file"/>
+    <Button
+        android:id="@+id/ClearBtn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="2. Clear text view"/>
+    <Button
+        android:id="@+id/LoadBtn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="3. Load from sd file"/>
+    <Button
+        android:id="@+id/FinishBtn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="4. Finish app"/>
+
+</LinearLayout>
