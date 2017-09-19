@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
 
     class DogThread extends Thread{
         int dogIdx, stateIdx;
-
         ArrayList<Integer> images = new ArrayList<>();
 
         public DogThread(int _idx) {
